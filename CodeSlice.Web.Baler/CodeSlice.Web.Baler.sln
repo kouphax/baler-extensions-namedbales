@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Baler.Extensions.NamedBales", "CodeSlice.Web.Baler.Extensions.NamedBales\Baler.Extensions.NamedBales.csproj", "{B09367D9-B6D3-4443-850F-C2B1900D175C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Baler.Test", "CodeSlice.Web.Baler.Test\Baler.Test.csproj", "{4E79BDDE-1C46-45B2-A954-753B663589C1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B09367D9-B6D3-4443-850F-C2B1900D175C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B09367D9-B6D3-4443-850F-C2B1900D175C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B09367D9-B6D3-4443-850F-C2B1900D175C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B09367D9-B6D3-4443-850F-C2B1900D175C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E79BDDE-1C46-45B2-A954-753B663589C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E79BDDE-1C46-45B2-A954-753B663589C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E79BDDE-1C46-45B2-A954-753B663589C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E79BDDE-1C46-45B2-A954-753B663589C1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
