@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System;
 
 namespace CodeSlice.Web.Baler.Extensions.NamedBales
 {
@@ -22,12 +23,12 @@ namespace CodeSlice.Web.Baler.Extensions.NamedBales
     // Currently this doesn't short circuit Balers internal cache so a second 
     // cache check will be made using the internal hashing mechanism.  This is
     // either a good thing or a bad thing.  But for now it's a good thing!
-    public static class NamedBale
+    public static class NamedBales
     {
         // Internal cache for named bundle keys
         private static readonly Dictionary<string, IBale> _cache = new Dictionary<string, IBale>();
 
-        // `Name` adds some sugar to the `IBale` interface allowing us to apply 
+        // `NameAs` adds some sugar to the `IBale` interface allowing us to apply 
         // a friendly name to a bale.  There is currently no check to see if the
         // bale name is already taken.  Existing definitions will be 
         // overwritten.
@@ -38,16 +39,16 @@ namespace CodeSlice.Web.Baler.Extensions.NamedBales
         }
 
         // Allows us to retrieve a bale based on a friendly name defined by the 
-        // developer.  Will retun `null` if the name doesn't exist - otherwise 
+        // developer.  Will throw an exception if the bale doesn't exist - otherwise 
         // the bale itself.
-        public static IBale Called(string name)
+        public static IBale Get(string name)
         {
             if(_cache.ContainsKey(name))
             {
                 return _cache[name];
             }
 
-            return null;
+            throw new Exception(string.Format("No Bale exists with the name of {0}", name));
         }
     }
 }

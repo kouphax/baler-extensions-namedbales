@@ -12,7 +12,7 @@ namespace CodeSlice.Web.Baler.Test
     {
         protected void Application_Start(object sender, EventArgs e)
         {
-            Baler.Build("~/src/single.js").Name("single");
+            Baler.Build("~/src/single.js").NameAs("single");
         }
     }
 }
