@@ -10,8 +10,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>CodeSlice.Web.Baler.Extensions.NamedBales</RootNamespace>
     <AssemblyName>CodeSlice.Web.Baler.Extensions.NamedBales</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -32,13 +33,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="CodeSlice.Web.Baler">
-      <HintPath>..\packages\CodeSlice.Web.Baler.0.1\lib\net40\CodeSlice.Web.Baler.dll</HintPath>
+      <HintPath>..\packages\CodeSlice.Web.Baler.0.4\lib\net35\CodeSlice.Web.Baler.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
   </ItemGroup>
