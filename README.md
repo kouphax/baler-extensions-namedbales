@@ -1,0 +1,1 @@
+# Baler is no longer in active development.  I recommend you look at [Cassette](http://getcassette.net/) if you want something in active development.
